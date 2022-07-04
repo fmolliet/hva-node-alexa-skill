@@ -1,0 +1,59 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "jarvis server",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "RequestIntent",
+          "slots": [
+            {
+              "name": "requestPayload",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Como faço {requestPayload}",
+            "Poderia me dizer {requestPayload}",
+            "Por que {requestPayload}",
+            "Quem {requestPayload}",
+            "Quanto {requestPayload}",
+            "Onde {requestPayload}",
+            "O que {requestPayload}",
+            "Quando {requestPayload}",
+            "Como {requestPayload}",
+            "Você poderia {requestPayload}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "payload"
+              }
+            }
+          ],
+          "name": "Request"
+        }
+      ]
+    }
+  },
+  "version": "5"
+}
